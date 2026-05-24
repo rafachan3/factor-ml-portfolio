@@ -28,6 +28,9 @@ pip install -r requirements.txt
 ```bash
 # Validate input data integrity
 python scripts/check_data.py
+
+# Exploratory data analysis (plots + summary in outputs/eda/)
+python scripts/run_eda.py
 ```
 
 ## Project layout
