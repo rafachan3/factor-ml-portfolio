@@ -31,6 +31,9 @@ python scripts/check_data.py
 
 # Exploratory data analysis (plots + summary in outputs/eda/)
 python scripts/run_eda.py
+
+# Validate feature preprocessing pipeline
+python scripts/validate_features.py
 ```
 
 ## Project layout
