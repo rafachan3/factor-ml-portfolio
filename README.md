@@ -37,6 +37,9 @@ python scripts/validate_features.py
 
 # Penalized linear baselines (OLS, LASSO, Ridge, EN) + OOS R²
 python scripts/run_linear_baselines.py
+
+# LightGBM advanced model + OOS R²
+python scripts/run_gbm.py
 ```
 
 ## Project layout
