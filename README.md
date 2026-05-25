@@ -34,6 +34,9 @@ python scripts/run_eda.py
 
 # Validate feature preprocessing pipeline
 python scripts/validate_features.py
+
+# Penalized linear baselines (OLS, LASSO, Ridge, EN) + OOS R²
+python scripts/run_linear_baselines.py
 ```
 
 ## Project layout
