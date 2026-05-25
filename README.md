@@ -40,6 +40,9 @@ python scripts/run_linear_baselines.py
 
 # LightGBM advanced model + OOS R²
 python scripts/run_gbm.py
+
+# Portfolio backtests (ridge predictions by default)
+python scripts/run_backtest.py
 ```
 
 ## Project layout
