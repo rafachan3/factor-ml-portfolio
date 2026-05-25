@@ -1,0 +1,8 @@
+{
+  "ridge_oos_r2": 0.007073,
+  "lgbm_oos_r2": -4.8e-05,
+  "sp500_annualized_return": 0.106724,
+  "long_only_top50_sharpe": 0.923749,
+  "vol_scaled_long75_sharpe": 0.933608,
+  "tolerance": 0.001
+}

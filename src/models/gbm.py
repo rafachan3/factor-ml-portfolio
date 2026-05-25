@@ -11,12 +11,11 @@ import pandas as pd
 from sklearn.metrics import mean_squared_error
 from sklearn.preprocessing import StandardScaler
 
+from src.config import RANDOM_STATE
 from src.features import cross_sectional_rank_normalize
 from src.metrics import oos_r2_no_mean
 from src.paths import TARGET_COLUMN
 from src.splits import iter_expanding_windows, split_panel_by_window
-
-RANDOM_STATE = 42
 MODEL_NAME = "lgbm"
 EARLY_STOPPING_ROUNDS = 50
 MAX_BOOST_ROUNDS = 1000
@@ -61,6 +60,9 @@ def _base_lgb_params(trial_params: dict[str, Any]) -> dict[str, Any]:
         "metric": "mse",
         "verbosity": -1,
         "seed": RANDOM_STATE,
+        "feature_fraction_seed": RANDOM_STATE,
+        "bagging_seed": RANDOM_STATE,
+        "data_random_seed": RANDOM_STATE,
         "feature_fraction": 0.8,
         "bagging_fraction": 0.8,
         "bagging_freq": 1,
